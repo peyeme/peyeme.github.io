@@ -79,14 +79,17 @@
 
 
 
+<meta name="description" content="记录学习点滴">
 <meta property="og:type" content="website">
 <meta property="og:title" content="categories">
 <meta property="og:url" content="https://peyeme.github.io/categories/index.html">
 <meta property="og:site_name" content="Peyeme&#39; blog">
+<meta property="og:description" content="记录学习点滴">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-03-20T09:36:16.670Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
+<meta name="twitter:description" content="记录学习点滴">
 
 
 
@@ -216,16 +219,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
-            
-            日程表
-          </a>
-        </li>
-      
 
       
         <li class="menu-item menu-item-search">
@@ -300,10 +293,10 @@
         
           <div class="category-all-page">
             <div class="category-all-title">
-                暂无分类
+                目前共计 1 个分类
             </div>
             <div class="category-all">
-              
+              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/置顶/">置顶</a><span class="category-list-count">1</span></li></ul>
             </div>
           </div>
         
@@ -357,7 +350,7 @@
                 alt="peyeme" />
             
               <p class="site-author-name" itemprop="name">peyeme</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">记录学习点滴</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -367,12 +360,21 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
             
 
             
@@ -380,7 +382,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -586,7 +588,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
