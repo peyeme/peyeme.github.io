@@ -87,13 +87,12 @@
 <meta property="og:site_name" content="Peyeme&#39; blog">
 <meta property="og:description" content="解决blog文件云备份同步问题   使用onedrive 使用Github建立分支   使用onedrive引用如何像用Dropbox那样用OneDrive备份你的本地文件  优点:onedrive与Windows系统深度整合,文件有改动,立刻就会启动同步   方法:使用mklink /j命令  首先Windows其实是支持软链的，不光是快捷方式。需要使用到的命令为mklink。 MKLINK的用">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://github.com/peyeme/peyeme.github.io/tree/master/images/mklink%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg">
-<meta property="og:image" content="https://github.com/peyeme/peyeme.github.io/blob/master/images/mklink%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg">
-<meta property="og:updated_time" content="2018-03-21T15:30:23.486Z">
+<meta property="og:image" content="https://peyeme.github.io/images/mklink%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg">
+<meta property="og:updated_time" content="2018-03-21T15:35:22.996Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="blog原文件同步">
 <meta name="twitter:description" content="解决blog文件云备份同步问题   使用onedrive 使用Github建立分支   使用onedrive引用如何像用Dropbox那样用OneDrive备份你的本地文件  优点:onedrive与Windows系统深度整合,文件有改动,立刻就会启动同步   方法:使用mklink /j命令  首先Windows其实是支持软链的，不光是快捷方式。需要使用到的命令为mklink。 MKLINK的用">
-<meta name="twitter:image" content="https://github.com/peyeme/peyeme.github.io/tree/master/images/mklink%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg">
+<meta name="twitter:image" content="https://peyeme.github.io/images/mklink%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg">
 
 
 
@@ -335,7 +334,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-21T23:30:23+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-21T23:35:22+08:00">
                 2018-03-21
               </time>
             
@@ -422,7 +421,7 @@
 <ul>
 <li>/H 就是创建一个硬链接。</li>
 </ul>
-<p>自己做的一个对比图如下：<br><img src="https://github.com/peyeme/peyeme.github.io/tree/master/images/mklink%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg" alt="对比图"><br><img src="https://github.com/peyeme/peyeme.github.io/blob/master/images/mklink%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg" alt="此处输入图片的描述"></p>
+<p>自己做的一个对比图如下：<br><img src="https://peyeme.github.io/images/mklink%E5%91%BD%E4%BB%A4%E5%AF%B9%E6%AF%94%E5%9B%BE.jpg" alt="mklink命令对比图"></p>
 <p>对加星部分，以及“要特殊讨论的情况”做下解释。</p>
 <blockquote>
 <p>为什么源文件被删除后，硬链接还可以正常访问文件呢？<br>因为硬链接相当于是一个别名。你所删除的“源文件”其实也只是删除了一个别名而已。这就好比我既叫韩学森又叫可可苏玛；假如哪天我觉得可可苏玛这个ID不好听了，我可以把它删掉。但我本人不会因此消失。。。<br>而需要特殊讨论的是什么呢？</p>
