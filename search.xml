@@ -27,7 +27,7 @@
     <url>%2F2018%2F03%2F23%2F%E6%80%8E%E6%A0%B7%E9%98%85%E8%AF%BBPython%E6%89%8B%E5%86%8C%2F</url>
     <content type="text"><![CDATA[PSF的Python语言系统附带的语言文档: Python教程(The Pyhton Tutorial):介绍Python语言的基本情况和Python编程基础,包括对语言中各结构的简短说明和小段的样例代码. Python语言手册(The Python Language Reference):以比较严格(比较形式化的)方式说明Python语言的各方面情况,包括结构的形式和语义等 Python标准库(The Python Standard library):分门别类地介绍了Python系统携带的各种标准模块,模块里提供的功能和简单的使用方法. 各版本的新特征 安装与使用 如何为Python安装其他程序模块 用Python编程时解决的一些常见的具体技术(Python HOWTO) 对一些常见问题的回答(Python Frenqency Asked Question)]]></content>
       <categories>
-        <category>从问题到程序--用Python学习编程和计算</category>
+        <category>从问题到程序--用Python学编程和计算</category>
       </categories>
       <tags>
         <tag>Python 手册</tag>
