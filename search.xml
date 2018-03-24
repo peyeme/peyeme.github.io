@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[怎样阅读Python手册]]></title>
-    <url>%2F2018%2F03%2F23%2F%E6%80%8E%E6%A0%B7%E9%98%85%E8%AF%BBPython%E6%89%8B%E5%86%8C%2F</url>
-    <content type="text"><![CDATA[PSF的Python语言系统附带的语言文档: Python教程(The Pyhton Tutorial):介绍Python语言的基本情况和Python编程基础,包括对语言中各结构的简短说明和小段的样例代码. Python语言手册(The Python Language Reference):以比较严格(比较形式化的)方式说明Python语言的各方面情况,包括结构的形式和语义等 Python标准库(The Python Standard library):分门别类地介绍了Python系统携带的各种标准模块,模块里提供的功能和简单的使用方法. 各版本的新特征 安装与使用 如何为Python安装其他程序模块 用Python编程时解决的一些常见的具体技术(Python HOWTO) 对一些常见问题的回答(Python Frenqency Asked Question)]]></content>
+    <title><![CDATA[字符串匹配]]></title>
+    <url>%2F2018%2F03%2F24%2F%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8D%2F</url>
+    <content type="text"><![CDATA[字符串匹配,也称子串匹配问题,是对字符串对象最重要的操作之一.这个操作本身很重要,同时也是许多其他字符操作的基础.Wiki上有专门的相关问题讨论 应用 文本中查找 Email服务器垃圾过滤 Google等网络搜索系统的基础就是在互联网的网页中查找与各种检索需求匹配的网页 各种防病毒软件检索表征病毒的片段,也是串匹配 生物DNA匹配 匹配算法朴素匹配算法无回溯串匹配算法（ＫＭＰ算法）]]></content>
       <categories>
-        <category>Python</category>
+        <category>数据结构与算法--Pyhton语言描述</category>
       </categories>
       <tags>
-        <tag>Python 手册</tag>
+        <tag>Python 数据结构 字符串 匹配</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[Python PEP代码形式]]></title>
-    <url>%2F2018%2F03%2F23%2FPython%20PEP%E4%BB%A3%E7%A0%81%E5%BD%A2%E5%BC%8F%2F</url>
+    <url>%2F2018%2F03%2F24%2FPython%20PEP%E4%BB%A3%E7%A0%81%E5%BD%A2%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[翻完一两遍《从问题到程序–用python学编程和计算》，才发现有些最基本的原则必须遵守。 空格问题 运算符前后应该加空格,逗号之后应该加空格,但逗号和冒号之间不加空格; 函数名与随后的参数表的括号之间不加空格; 每层代码之间统一退格4个空格,不用制表符Tab; 换行和空行 一行不要太长,过长时应当换行(必要时使用续行符); 在函数定义和类定义之间,在逻辑功能上互相有区分的大段代码之间加入空行,使代码的不同重要片段跟容易识别 注释尽可能写为独立的注释行]]></content>
       <categories>
-        <category>python</category>
+        <category>从问题到程序--用python学编程和计算</category>
       </categories>
       <tags>
         <tag>python PEP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[怎样阅读Python手册]]></title>
+    <url>%2F2018%2F03%2F23%2F%E6%80%8E%E6%A0%B7%E9%98%85%E8%AF%BBPython%E6%89%8B%E5%86%8C%2F</url>
+    <content type="text"><![CDATA[PSF的Python语言系统附带的语言文档: Python教程(The Pyhton Tutorial):介绍Python语言的基本情况和Python编程基础,包括对语言中各结构的简短说明和小段的样例代码. Python语言手册(The Python Language Reference):以比较严格(比较形式化的)方式说明Python语言的各方面情况,包括结构的形式和语义等 Python标准库(The Python Standard library):分门别类地介绍了Python系统携带的各种标准模块,模块里提供的功能和简单的使用方法. 各版本的新特征 安装与使用 如何为Python安装其他程序模块 用Python编程时解决的一些常见的具体技术(Python HOWTO) 对一些常见问题的回答(Python Frenqency Asked Question)]]></content>
+      <categories>
+        <category>从问题到程序--用Python学习编程和计算</category>
+      </categories>
+      <tags>
+        <tag>Python 手册</tag>
       </tags>
   </entry>
   <entry>
