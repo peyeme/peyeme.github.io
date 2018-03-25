@@ -8,7 +8,8 @@
         <category>从问题到程序--用Python学编程和计算</category>
       </categories>
       <tags>
-        <tag>python PEP</tag>
+        <tag>python</tag>
+        <tag>PEP</tag>
       </tags>
   </entry>
   <entry>
@@ -19,7 +20,10 @@
         <category>数据结构与算法--Pyhton语言描述</category>
       </categories>
       <tags>
-        <tag>Python 数据结构 字符串 匹配</tag>
+        <tag>Python</tag>
+        <tag>数据结构</tag>
+        <tag>字符串</tag>
+        <tag>匹配</tag>
       </tags>
   </entry>
   <entry>
@@ -30,7 +34,8 @@
         <category>从问题到程序--用Python学编程和计算</category>
       </categories>
       <tags>
-        <tag>Python 手册</tag>
+        <tag>Python</tag>
+        <tag>手册</tag>
       </tags>
   </entry>
   <entry>
@@ -41,7 +46,8 @@
         <category>blog原文件同步</category>
       </categories>
       <tags>
-        <tag>onedrive Github分支</tag>
+        <tag>onedrive</tag>
+        <tag>Github分支</tag>
       </tags>
   </entry>
   <entry>
