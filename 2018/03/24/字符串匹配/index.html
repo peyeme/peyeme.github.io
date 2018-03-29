@@ -87,14 +87,14 @@
 <meta property="og:site_name" content="Peyeme&#39; blog">
 <meta property="og:description" content="字符串匹配,也称子串匹配问题,是对字符串对象最重要的操作之一.这个操作本身很重要,同时也是许多其他字符操作的基础.Wiki上有专门的相关问题讨论 应用 文本中查找 Email服务器垃圾过滤 Google等网络搜索系统的基础就是在互联网的网页中查找与各种检索需求匹配的网页 各种防病毒软件检索表征病毒的片段,也是串匹配 生物DNA匹配  匹配算法朴素匹配算法两个字符t、p,在t中查找pt为目标串p为模">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://peyeme.github.io/tree/master/images/KMP%E6%94%B9%E8%BF%9B.jpg">
+<meta property="og:image" content="https://peyeme.github.io/images/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8DKMP%E7%AE%97%E6%B3%95.jpg">
 <meta property="og:image" content="https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg">
 <meta property="og:image" content="https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg">
-<meta property="og:updated_time" content="2018-03-29T12:57:15.143Z">
+<meta property="og:updated_time" content="2018-03-29T13:05:03.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="字符串匹配">
 <meta name="twitter:description" content="字符串匹配,也称子串匹配问题,是对字符串对象最重要的操作之一.这个操作本身很重要,同时也是许多其他字符操作的基础.Wiki上有专门的相关问题讨论 应用 文本中查找 Email服务器垃圾过滤 Google等网络搜索系统的基础就是在互联网的网页中查找与各种检索需求匹配的网页 各种防病毒软件检索表征病毒的片段,也是串匹配 生物DNA匹配  匹配算法朴素匹配算法两个字符t、p,在t中查找pt为目标串p为模">
-<meta name="twitter:image" content="https://peyeme.github.io/tree/master/images/KMP%E6%94%B9%E8%BF%9B.jpg">
+<meta name="twitter:image" content="https://peyeme.github.io/images/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8DKMP%E7%AE%97%E6%B3%95.jpg">
 
 
 
@@ -336,7 +336,7 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-29T20:57:15+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-03-29T21:05:03+08:00">
                 2018-03-29
               </time>
             
@@ -403,7 +403,7 @@
 <h1 id="匹配算法"><a href="#匹配算法" class="headerlink" title="匹配算法"></a>匹配算法</h1><h2 id="朴素匹配算法"><a href="#朴素匹配算法" class="headerlink" title="朴素匹配算法"></a>朴素匹配算法</h2><p>两个字符t、p,在t中查找p<br>t为目标串<br>p为模式串</p>
 <h2 id="无回溯串匹配算法（KMP算法）"><a href="#无回溯串匹配算法（KMP算法）" class="headerlink" title="无回溯串匹配算法（ＫＭＰ算法）"></a>无回溯串匹配算法（ＫＭＰ算法）</h2><a id="more"></a>
 <h2 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h2><p>不回溯:如果匹配中用模式串第i+1个字符匹配失败,那么直接将模式串前移k个位置(0&lt;k&lt;i),而不是仅仅只前移一个位置.所以关键是确定K.<br>当匹配失败时,KMP算法会把模式串前移进行再次匹配,原本<strong>似乎</strong>应该根据目标串t中<strong>之前匹配的一段字符串</strong>来决定模式串的位置,实际上,因为<strong>之前匹配的一段字符串</strong>在t和p中是相同的,而且<strong>肯定是p中前i个字符串</strong>.<br>那么确定k的问题只需要分析模式串p就可以了.<br>将p切片成为从下表0开始的长度为1到m==len(p)的m个不同的字符串,<strong>对应于p于t匹配时分别有前1到前m个匹配的情况</strong>(m个匹配意味着完全匹配,但还是需要向前移动,t中可能有多个匹配).</p>
-<p><img src="https://peyeme.github.io/tree/master/images/KMP%E6%94%B9%E8%BF%9B.jpg" alt="此处输入图片的描述"></p>
+<p><img src="https://peyeme.github.io/images/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8DKMP%E7%AE%97%E6%B3%95.jpg" alt="此处输入图片的描述"></p>
 <h2 id="构造移动表"><a href="#构造移动表" class="headerlink" title="构造移动表"></a>构造移动表</h2><p>由于通常模式串p长度远远小于目标串长度,所以这样做会大大降低计算复杂度.</p>
 <h3 id="考虑构造一个移动pnext-len-pnext-m"><a href="#考虑构造一个移动pnext-len-pnext-m" class="headerlink" title="考虑构造一个移动pnext,len(pnext)==m."></a>考虑构造一个移动pnext,len(pnext)==m.</h3><ul>
 <li>实际看p的不同长度的切片中,首尾相同的字符的数量<br>e.g. </li>
@@ -414,9 +414,11 @@
 - 当确定首尾相同的字符长度后,就可以用**切片的长度**减去**k**,即得到前移的量.
 - 切片的长度初始值是用p与t进行匹配,看有前多少(i)个字符相同,切片的长度为多少(i)
 - **每次移动在进行匹配,更新切片长度;根据切片长度,确定k值;得到位移量i-k**
-</code></pre><p><img src="https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg" width="300" height="200" alt="改进的KMP算法" align="center"></p>
+</code></pre><p>图片插入也可以用<code>&lt;img&gt;</code><br>    <img src="https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg" width="300" height="200" alt="改进的KMP算法" align="center"></p>
 <p><img src="https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg" alt="img{图尺寸}"></p>
-
+<pre><code>注意这里图片的链接https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg
+而不是https://github.com/peyeme/peyeme.github.io/blob/master/images/KMP%E6%94%B9%E8%BF%9B.jpg
+</code></pre>
       
     </div>
     
