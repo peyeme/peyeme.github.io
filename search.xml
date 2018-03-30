@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[sci-hub and google scholar research]]></title>
+    <url>%2F2018%2F03%2F30%2Fsci_hub%2F</url>
+    <content type="text"><![CDATA[谷歌学术镜像_Google学术搜索导航 sci-hub：一个神奇的免费下载文献的网站（使用技巧） 2017.12.16更新，抱歉下面三个网址用不了了。请用以下几个： http://www.sci-hub.tw/ http://www.sci-hub.tv/ http://www.sci-hub.la/ http://www.sci-hub.mm/ http://www.sci-hub.is/ http://www.sci-hub.ws/ http://www.sci-hub.hk/ http://www.sci-hub.cn/ http://www.sci-hub.sci-hub.tw/ http://www.sci-hub.sci-hub.mn/ http://www.sci-hub.sci-hub.hk/ http://www.sci-hub.org.cn/ 下面在网址上加http://sci-hub.cc的方法，目前可以改成加sci-hub.la，这样还是可以用的。 如果你使用www.sci-hub.org.cn这个网站，sci-hub和谷歌联合起来的搜索引擎，检索的结果点击全文下载，会出现意想不到的结果。 出现的结果会给出影响因子和中科院JCR分区，右侧几个按钮尝试一下，很多是可以一键下载的。 对于科研民工们，肯定很多人接触过sci-hub这个网站，一个很神奇的免费下载文献的网站。目前的网址是这三个。 http://www.sci-hub.cc/ http://www.sci-hub.bz/ http://www.sci-hub.ac/ 使用sci-hub有两种途径三个方法。第一种途径是上述三个网址进入hub这个网站，方法一是找到你要下载的文献的pdf下载页面网址，复制并粘贴到hub的搜索框中，即可下载；方法二是复制该文献的doi粘贴到hub搜索框中，即可下载；第二种途径是，不进入hub这个网站。使用Google学术或者百度学术等检索文献利器找到文献下载页面，在页面的网址里进行修改。修改方法是，该文献网址的主网站后面加上.http://sci-hub.cc .sci-hub.ac .sci-hub.bz 三个中任意一个。然后回车，你会发现，没有权限的文献马上就会出来pdf界面变成可以下载。 例如下面这个例子: Lake Qinghai, China: closed-basin like levels and the oxygen isotope record for ostracoda since the latest Pleistocene这个网址，这篇论文是需要purchase的。但是在.com后面加上.sci-hub.cc(Science, health and medical journals, full text articles and books..sci-hub.cc/science/article/pii/003101829190041O)立刻就变成了可下载状态。 欢迎大家围观专栏中的这一篇文章【文献检索】火狐和谷歌浏览器里的sci-hub插件 谷歌学术镜像_Google学术搜索导航http://ac.scmor.com/]]></content>
+      <categories>
+        <category>学习资源</category>
+      </categories>
+      <tags>
+        <tag>Sci-hub</tag>
+        <tag>google scholar</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[栈和队列]]></title>
     <url>%2F2018%2F03%2F28%2F%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%2F</url>
     <content type="text"><![CDATA[引入 栈stack: 数学题,当推导不下去时,通常退一步去考虑其他可能性;一摞碗,可以把新的摞上去,而取得时候,总是取最后放上去的碗. 队列queue:银行排队办业务,叫号. 定义栈stack: Last In First Out(LIFO)关系的结构队列queue: First In First Out(FIFO)关系的结构 栈的应用栈是算法里最常用的辅助结构,基本用途基于两个方面: 作为辅助存储结构,临时保存信息,供后面操作中使用 栈具有LIFO特性,利用这一特性可以保证特定的存取关系 简单应用 括号匹配问题 考虑三种括号 :圆括号,方括号,花括号 开,闭应该相互对应 括号可能嵌套 HOWTO: 顺序扫描字符 跳过无关的字符(非括号字符) 遇到开括号,将其压入栈 遇到闭括号是弹出当时的栈顶元素与之匹配 如果匹配成功则继续,不成功则以失败结束]]></content>
