@@ -78,30 +78,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[创建草稿,编辑,重命名,发布到_post,部署]]></title>
-    <url>%2F2018%2F03%2F19%2Fmyblog1%E5%BB%BA%E7%AB%8B%E5%90%8E%E7%9B%B4%E6%8E%A5%E9%87%8D%E5%91%BD%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[测试创建后改名 在_draft中创建一个myblog.md的文件当然是用hexo命令 hexo new draft myblog 然后当然是写blog了巴拉巴拉 预览darft中的blog当然实名命令$ hexo server --draft $ hexo server --draft -p 5000 发布草稿到$ hexo publish [layout] &lt;filename&gt;]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[创建草稿,编辑,重命名,发布到_post,部署]]></title>
-    <url>%2F2018%2F03%2F19%2Fmyblog1%E5%BB%BA%E7%AB%8B%E5%90%8E%E9%87%8D%E5%91%BD%E5%90%8D%2F</url>
-    <content type="text"><![CDATA[测试创建后改名 在_draft中创建一个myblog.md的文件当然是用hexo命令 hexo new draft myblog 然后当然是写blog了巴拉巴拉 预览darft中的blog当然实名命令$ hexo server --draft $ hexo server --draft -p 5000 发布草稿到$ hexo publish [layout] &lt;filename&gt;]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[myblog]]></title>
-    <url>%2F2018%2F03%2F19%2Fmyblog%2F</url>
-    <content type="text"><![CDATA[测试创建后改名在_draft中创建一个myblog.md的文件当然是用hexo命令 hexo new draft myblog 然后当然是写blog了]]></content>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Github Blog之路]]></title>
     <url>%2F2018%2F03%2F19%2FGithub%20blog%E4%B9%8B%E8%B7%AF%2F</url>
     <content type="text"><![CDATA[Github Blog之路搭建blog参考了@ryanluoxu的用-Hexo-和-GitHub-Pages-搭建博客@tanchao90用Hexo和GitHub Pages搭建个人博客@wordzzzz我的个人博客之旅：从jekyll到hexo当然&amp;官方hexo文档 心路历程 Github配置 Hexo配置 next配置 心路历程Github还是在校期间注册了,轻度使用过,因该是连门都没入.毕业后经历了十几年了,期间荒废了很多年,也断断续续学了一些东西.从2018年1月,在市图书馆(从遇见到第一次亲密接触错过了很多次机会，人说失去才知道珍惜，其实在得到才会更珍惜)借了一本《从问题到程序–用Python学编程和计算》，打开了我的Programming之路。这本书看了三个月,初学者是一本不可多得的好书.为了学习编程，决定开个博客，于是又得到了我的Github。也准备把这几年来学习所得都放上去. 这几年学的很杂. 毕业后7/8年都是以工作为主,奔着Radar engineer方向去了,说实话我是很热爱我的专业的,也用心去做,无奈流水无情终须离开. 2012年考研,在本科毕业7年后重新走进大学校园–西北工业大学.考研成功也给了自己信心,我还可以学习.三年经历开拓了眼界,入门了科研、骑行、户外、露营、游泳……我知道我的生活不会再枯燥了. 毕业后几年为静心学习书法 为和My baby girl交流,学绘画 为了心中的建筑梦,从基础的力学,到建筑设计,到艺术史 GithubCreate Repository name:peyeme.github.io 然后就开始求索一路,当然,一开始是jekyll,但是不会用bing,知乎(国内小白之路还是从这两个容易&amp;靠谱一点的开始)看到了hexo,学习 如何保存原始文件到github上作者：张钊链接：https://www.zhihu.com/question/21193762/answer/172097576来源：知乎著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。 可以更新使用最新的 hexo-deployer-git 插件，因为没有发布到 npm 的原因，必须得从 github 安装npm install git+git@github.com:hexojs/hexo-deployer-git.git –save在项目根目录下的 _config.yml 里面就可以这样配置# _config.yaml deploy: - type: git repo: git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git branch: master - type: git repo: git@github.com:&lt;username&gt;/&lt;username&gt;.github.io.git branch: src extend_dirs: / ignore_hidden: false ignore_pattern: public: . 这样，在每次写完博客的时候时候使用 hexo d 命令就能将所有其他文件发布到 src 分支换电脑的时候就能通过 git 重新下载下来整个项目，然后本地切换到远端的 src 分支git checkout origin/src 就能重新获得所有的源文件，就能重新 hexo d 发布对于每一个从 git 下载下来的项目或者主题，最好把每个的 .git 文件夹删掉，否则得通过 submodule 的方式来安装。hexohexo文档 https://hexo.io/zh-cn/docs/index.html Hexo目录结构说明 _config.yml 网站的配置信息 package.json 应用程序的信息。EJS, Stylus和Markdown renderer已默认安装 scaffolds 模版文件夹。当您新建文章时，Hexo会根据scaffold来建立文件 source 资源文件夹是存放用户资源的地方 _drafts 草稿箱，可以将不想发布的文章放在该目录下面，比如我将自己的写作模板文件放在这里 _posts 该目录下的文件会被生成和发布 themes 主题文件夹。Hexo 会根据主题来生成静态页面 public 执行generate命令后生成public文件夹，并解析Markdown和HTML文件到该目录 常用命令 以下是操作Hexo书写、生成、部署博客常用的几个命令，后面会有详细介绍： hexo init [folder] hexo version hexo list hexo new [layout] hexo publish [layout] hexo generate hexo clean hexo server hexo deploy Example 创建草稿，写作，本地预览 hexo new draft my_blog hexo server –draft 写作完成之后，发布草稿，生成静态博客，并部署到 Github Pages hexo –config custom.yml publish draft my_blog hexo clean 正常情况不需要执行该命令 hexo –config custom.yml generate hexo –config custom.yml deploy 遇到的问题fsevent是mac osx系统的，在win或者Linux下使用了,所以会有警告，忽略即可。1234567$ npm install hexo-deployer-git --savenpm WARN deprecated swig@1.4.2: This package is no longer maintainednpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.3 (node_modules\fsevents):npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)+ hexo-deployer-git@0.3.1added 116 packages and updated 1 package in 18.176s next设置更多常见问题见next网站http://theme-next.iissnan.com/faqs.html#%E9%A6%96%E9%A1%B5%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E6%91%98%E5%BD%95next更多问题https://github.com/iissnan/hexo-theme-next/issues?page=2&amp;q=is%3Aissue+is%3Aopen 如何修改已发布的博客的名字(哈哈,很二很小白的问题)title: {{ title }} #改这里的名字就行了,刚开始是从别的地方拷贝过来的.MD,没有title,结果显示未命名,怎么都改不了,呵呵了 date: {{ date }} update: {{ date }} tags: type: &quot;categories&quot; categories: top: #设置置顶,设置数值，数值越大文章越靠前 #sticky: #100 next文档中的置顶方法 #copyright: true #新增,开启 如何设置「阅读全文」？在首页显示一篇文章的部分内容，并提供一个链接跳转到全文页面是一个常见的需求。 NexT 提供三种方式来控制文章在首页的显示方式。 也就是说，在首页显示文章的摘录并显示 阅读全文 按钮，可以通过以下方法： 在文章中使用 &lt;!-- more --&gt; 手动进行截断，Hexo 提供的方式 推荐在文章的 front-matter 中添加 description，并提供文章摘录自动形成摘要，在 主题配置文件 中添加： auto_excerpt: enable: true length: 150 默认截取的长度为 150 字符，可以根据需要自行设定 建议使用 &lt;!-- more --&gt;（即第一种方式），除了可以精确控制需要显示的摘录内容以外， 这种方式也可以让 Hexo 中的插件更好的识别。 置顶解决Hexo置顶问题,参考解决Hexo置顶问题 $ npm uninstall hexo-generator-index --save $ npm install hexo-generator-index-pin-top --save 然后在需要置顶的文章的Front-matter中加上top: true即可。 Github: https://github.com/netcan/hexo-generator-index-pin-top 本地搜索在你站点的根目录下 $ npm install hexo-generator-searchdb --save 打开 Hexo 站点的 _config.yml,添加配置 search: path: search.xml field: post format: html limit: 10000 打开 themes/next/_config.yml ,搜索关键字 local_search ,设置为 true： # Local search # Dependencies: https://github.com/flashlab/hexo-generator-search local_search: enable: true # if auto, trigger search by changing input # if manual, trigger search by pressing enter key or search button trigger: auto # show top n results per article, show all results by setting to -1 top_n_per_article: 1 创建菜单项对应文件目录,以分类为例在终端窗口下，定位到 Hexo 站点目录下。使用 hexo new page 新建一个页面，命名为 categories ： $ cd your-hexo-site $ hexo new page categories 编辑刚新建的页面,设置分类 --- title: 分类 date: 2014-12-22 12:39:04 categories: Testing #分类名 type: &quot;categories&quot; --- 版权设置参见自定义文章底部版权声明 设置新建文章自动开启项--- title: {{ title }} date: {{ date }} tags: type: &quot;categories&quot; categories: copyright: true #新增,开启 --- 文章顶部显示更新时间打开主题配置文件 _config.yml ,搜索关键字 updated_at 设置为 true ： # Post meta display settings post_meta: item_text: true created_at: true updated_at: ture categories: true 编辑文章,增加关键字updated（next可以根据文章改变时间自动更改） --- layout: layout title: 关于 date: 2017-08-18 15:41:18 updated: 2017-09-05 20:18:54 #手动添加更新时间 ---]]></content>
@@ -111,38 +87,5 @@
       <tags>
         <tag>Github Blog</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[之路]]></title>
-    <url>%2F2018%2F03%2F19%2F%E4%B9%8B%E8%B7%AF%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[之路]]></title>
-    <url>%2F2018%2F03%2F19%2Ftags-%20Github%20blog%2F</url>
-    <content type="text"><![CDATA[#Github Blog之路 搭建blog参考了@ryanluoxu的用-Hexo-和-GitHub-Pages-搭建博客 @tanchao90用Hexo和GitHub Pages搭建个人博客 @wordzzzz我的个人博客之旅：从jekyll到hexo 当然&amp;官方hexo文档 心路历程 Hexo 心路历程Github还是在校期间注册了,轻度使用过,因该是连门都没入.毕业后经历了十几年了,期间荒废了很多年,也断断续续学了一些东西.从2018年1月,在市图书馆(从遇见到第一次亲密接触错过了很多次机会，人说失去才知道珍惜，其实在得到才会更珍惜)借了一本《从问题到程序–用Python学编程和计算》，打开了我的Programming之路。这本书看了三个月,初学者是一本不可多得的好书.为了学习编程，决定开个博客，于是又得到了我的Github。也准备把这几年来学习所得都放上去. 这几年学的很杂. 毕业后7/8年都是以工作为主,奔着Radar engineer方向去了,说实话我是很热爱我的专业的,也用心去做,无奈流水无情终须离开. 2012年考研,在本科毕业7年后重新走进大学校园–西北工业大学.考研成功也给了自己信心,我还可以学习.三年经历开拓了眼界,入门了科研、骑行、户外、露营、游泳……我知道我的生活不会再枯燥了. 毕业后几年为静心学习书法 为和My baby girl交流,学绘画 为了心中的建筑梦,从基础的力学,到建筑设计,到艺术史 hexoGithubCreate Repository name:peyeme.github.io 然后就开始求索一路,当然,一开始是jekyll,但是不会用bing,知乎(国内小白之路还是从这两个容易&amp;靠谱一点的开始)看到了hexo,学习 Hexo目录结构说明 _config.yml 网站的配置信息 package.json 应用程序的信息。EJS, Stylus和Markdown renderer已默认安装 scaffolds 模版文件夹。当您新建文章时，Hexo会根据scaffold来建立文件 source 资源文件夹是存放用户资源的地方 _drafts 草稿箱，可以将不想发布的文章放在该目录下面，比如我将自己的写作模板文件放在这里 _posts 该目录下的文件会被生成和发布 themes 主题文件夹。Hexo 会根据主题来生成静态页面 public 执行generate命令后生成public文件夹，并解析Markdown和HTML文件到该目录 常用命令 以下是操作Hexo书写、生成、部署博客常用的几个命令，后面会有详细介绍： hexo init [folder] hexo version hexo list hexo new [layout] hexo publish [layout] hexo generate hexo clean hexo server hexo deploy Example 创建草稿，写作，本地预览 hexo –config custom.yml new draft my_blog hexo –config custom.yml server –draft 写作完成之后，发布草稿，生成静态博客，并部署到 Github Pages hexo –config custom.yml publish draft my_blog hexo clean 正常情况不需要执行该命令 hexo –config custom.yml generate hexo –config custom.yml deploy fsevent是mac osx系统的，在win或者Linux下使用了,所以会有警告，忽略即可。1234567$ npm install hexo-deployer-git --savenpm WARN deprecated swig@1.4.2: This package is no longer maintainednpm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.3 (node_modules\fsevents):npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;x64&quot;&#125;)+ hexo-deployer-git@0.3.1added 116 packages and updated 1 package in 18.176s]]></content>
-      <tags>
-        <tag>Github blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2018%2F03%2F18%2FGithub%20Blog%E4%B9%8B%E8%B7%AF0%2F</url>
-    <content type="text"><![CDATA[Github Blog之路标签： github hexo Cmd Markdown 搭建blog参考了@ryanluoxu的用-Hexo-和-GitHub-Pages-搭建博客@tanchao90用Hexo和GitHub Pages搭建个人博客@wordzzzz我的个人博客之旅：从jekyll到hexo当然&amp;官方hexo文档 **- 心路历程 Hexo-** 心路历程Github还是在校期间注册了,轻度使用过,因该是连门都没入.毕业后经历了十几年了,期间荒废了很多年,也断断续续学了一些东西.从2018年1月,在市图书馆（从遇见到第一次亲密接触错过了很多次机会，人说失去才知道珍惜，其实在得到才会更珍惜）借了一本《从问题到程序–用Python学编程和计算》，打开了我的Programming之路。这本书看了三个月,初学者是一本不可多得的好书.为了学习编程，决定开个博客，于是又得到了我的Github。也准备把这几年来学习所得都放上去. 这几年学的很杂. 毕业后7/8年都是以工作为主,奔着Radar engineer方向去了,说实话我是很热爱我的专业的,也用心去做,无奈流水无情终须离开. 2012年考研,在本科毕业7年后重新走进大学校园–西北工业大学.考研成功也给了自己信心,我还可以学习.三年经历开拓了眼界,入门了科研、骑行、户外、露营、游泳……我知道我的生活不会再枯燥了. 毕业后几年为静心学习书法 为和My baby girl交流,学绘画 为了心中的建筑梦,从基础的力学,到建筑设计,到艺术史 hexoGithubCreate Repositoryname:peyeme.github.io 然后就开始求索一路,当然,一开始是jekyll,但是不会用bing,知乎(国内小白之路还是从这两个容易&amp;靠谱一点的开始)看到了hexo,学习]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2018%2F03%2F18%2FGithub%20Blog%E4%B9%8B%E8%B7%AF1%2F</url>
-    <content type="text"><![CDATA[Github Blog之路标签： github hexo Cmd Markdown 搭建blog参考了@ryanluoxu的用-Hexo-和-GitHub-Pages-搭建博客 @tanchao90用Hexo和GitHub Pages搭建个人博客 @wordzzzz我的个人博客之旅：从jekyll到hexo 当然&amp;官方hexo文档 心路历程 Hexo 心路历程Github还是在校期间注册了,轻度使用过,因该是连门都没入.毕业后经历了十几年了,期间荒废了很多年,也断断续续学了一些东西.从2018年1月,在市图书馆(从遇见到第一次亲密接触错过了很多次机会，人说失去才知道珍惜，其实在得到才会更珍惜)借了一本《从问题到程序–用Python学编程和计算》，打开了我的Programming之路。这本书看了三个月,初学者是一本不可多得的好书.为了学习编程，决定开个博客，于是又得到了我的Github。也准备把这几年来学习所得都放上去. 这几年学的很杂. 毕业后7/8年都是以工作为主,奔着Radar engineer方向去了,说实话我是很热爱我的专业的,也用心去做,无奈流水无情终须离开. 2012年考研,在本科毕业7年后重新走进大学校园–西北工业大学.考研成功也给了自己信心,我还可以学习.三年经历开拓了眼界,入门了科研、骑行、户外、露营、游泳……我知道我的生活不会再枯燥了. 毕业后几年为静心学习书法 为和My baby girl交流,学绘画 为了心中的建筑梦,从基础的力学,到建筑设计,到艺术史 hexoGithubCreate Repositoryname:peyeme.github.io 然后就开始求索一路,当然,一开始是jekyll,但是不会用bing,知乎(国内小白之路还是从这两个容易&amp;靠谱一点的开始)看到了hexo,学习]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[test]]></title>
-    <url>%2F2018%2F03%2F18%2Ftest%2F</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F03%2F18%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
