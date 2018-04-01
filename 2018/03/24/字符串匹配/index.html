@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://peyeme.github.io/images/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8C%B9%E9%85%8DKMP%E7%AE%97%E6%B3%95.jpg">
 <meta property="og:image" content="https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg">
-<meta property="og:updated_time" content="2018-03-29T13:09:23.056Z">
+<meta property="og:updated_time" content="2018-04-01T07:44:27.698Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="字符串匹配">
 <meta name="twitter:description" content="字符串匹配,也称子串匹配问题,是对字符串对象最重要的操作之一.这个操作本身很重要,同时也是许多其他字符操作的基础.Wiki上有专门的相关问题讨论 应用 文本中查找 Email服务器垃圾过滤 Google等网络搜索系统的基础就是在互联网的网页中查找与各种检索需求匹配的网页 各种防病毒软件检索表征病毒的片段,也是串匹配 生物DNA匹配  匹配算法朴素匹配算法两个字符t、p,在t中查找pt为目标串p为模">
@@ -335,8 +335,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-03-29T21:09:23+08:00">
-                2018-03-29
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-01T15:44:27+08:00">
+                2018-04-01
               </time>
             
           </span>
@@ -417,7 +417,19 @@
 <p><img src="https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg" alt="img{图尺寸}"></p>
 <pre><code>注意这里图片的链接https://peyeme.github.io/images/KMP%E6%94%B9%E8%BF%9B.jpg
 而不是https://github.com/peyeme/peyeme.github.io/blob/master/images/KMP%E6%94%B9%E8%BF%9B.jpg
-</code></pre>
+</code></pre><p><strong>出现-1时,是因为匹配0个,需要向前移动1位,那么赋予一个特殊值-1,表示任何情况下只移动一位</strong><br><strong>为什么pnext要从前一位开始?算的是匹配了几位,当然有一位都没匹配的情况,所以从前一位开始,因为p[0]实际上是第一位,也是匹配了一位<br>pnext[0]默认是-1<br>那么pnext<a href="http://en.wikipedia.org/wiki/String_search_algorithm" target="_blank" rel="noopener">1</a>的值怎么确定:不管怎么取,第一个值总会是相等的,但是却给它赋值为0(默认pnext前两个值为-1,0)<br>                        在这个例子中,第一个元素是a,pnext<a href="http://en.wikipedia.org/wiki/String_search_algorithm" target="_blank" rel="noopener">1</a>是0<br>                        但是,在后面(i&gt;1)位置出现a时,却赋值1<br>`<br>def gen_pnext(p):<br>    “””生成正对p中</strong>各位置i的下一位置检查表*<em>,用于KMP算法,(原始版)”””<br>    i, k, m = 0, -1, len(p)<br>    pnext = [-1] </em> m<br>    while i &lt; m-1:   # 生成下一个pnext元素<br>        if k == -1 or p[i] = p[k]  : 若果特殊值-1,直接前移一位;如果当前值匹配,那么给pnext赋值,并且前移一位(加1)<br>            pnext[i+1] = k+1  # 因为pnext是从p的前一位开始的,pnext[-1]默认为-1,p[0]对应的是pnext<a href="http://en.wikipedia.org/wiki/String_search_algorithm" target="_blank" rel="noopener">1</a></p>
+<pre><code>                  #                             实际上pnext[1]也是默认为0的,所以这个循环可已从pnext[2],也即p[i=1]开始
+    i, k = i+1, k+1
+    # 因此书上将这里合并为i, k = i+1, k+1
+    #                     pnext[i] = k
+    # 结果是一致的
+else:
+    k = pnext[k]  # 退到更短的pnext元素
+    # **书上的算法实现非常不直观,要不自己写一个好了**
+return pnext
+</code></pre><p>`</p>
+<p>我的思路是切片,把p切成从0,1…,len(p)-1不同长度的字符串<br>如<br>第一步:p[0:1]与p相比较,看有几个匹配,当然这里第一个因为是对其的,肯定是1个 #  因为Python默认是左闭右开,所以这实际上是p的第一个元素<br>第二步:p[1:2]</p>
+
       
     </div>
     
@@ -546,7 +558,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -568,7 +580,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
